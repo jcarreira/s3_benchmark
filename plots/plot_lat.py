@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
+plt.figure(figsize=(3,4))
+
 samples = []
 
 with open('latency') as fin:
@@ -18,3 +20,5 @@ plt.xlabel('Latency ms')
 plt.ylabel('CDF')
 
 plt.show()
+
+plt.savefig("lat_graph.png")

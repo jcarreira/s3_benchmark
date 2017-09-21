@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
+plt.figure(figsize=(3,4))
+
 samples = []
 
 with open('bandwidth') as fin:
@@ -17,3 +19,5 @@ plt.xlabel('Bandwidth MB/s')
 plt.ylabel('CDF')
 
 plt.show()
+
+plt.savefig("bw_graph.png")
